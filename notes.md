@@ -1,6 +1,9 @@
 
 Step1: create the common user in all the machine 
+```
 adduser devops 
+```
+
 
 Step2: Give root privileges for the user
 open visudo file 
@@ -15,7 +18,9 @@ to generate the ssh-key
 ssh-keygen 
 ```
 to copyt the ssh publick key to the worker machine 
-ssh-copy-id ip - it will prompt to give the password .
+
+
+`ssh-copy-id ip` - it will prompt to give the password .
 
 
 
@@ -84,6 +89,6 @@ SSH password:
     "uid": 1002
 }
 
-
+```
 
 
