@@ -1,4 +1,27 @@
 
+Step1: create the common user in all the machine 
+adduser devops 
+
+Step2: Give root privileges for the user
+open visudo file 
+
+```
+devops ALL=(ALL:ALL) 
+```
+Step3:
+generate the sshkey on ansible master node and copy it to the all worker machine 
+to generate the ssh-key 
+```
+ssh-keygen 
+```
+to copyt the ssh publick key to the worker machine 
+ssh-copy-id ip - it will prompt to give the password .
+
+
+
+
+
+
 ---
 devops@ip-172-31-28-86:~$ ls /etc/ansible/
 ansible.cfg  hosts  roles
