@@ -28,6 +28,7 @@ to copyt the ssh publick key to the worker machine
 
 
 ---
+```
 devops@ip-172-31-28-86:~$ ls /etc/ansible/
 ansible.cfg  hosts  roles
 devops@ip-172-31-28-86:~$ vi inventory
